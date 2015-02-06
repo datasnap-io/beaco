@@ -60,9 +60,9 @@
         </div>
         <div id="navbar" class="collapse navbar-collapse">
           <ul class="nav navbar-nav">
-            //- <li class="active"><a href="#">Home</a></li>
-            //- <li><a href="#about">About</a></li>
-            //- <li><a href="#contact">Contact</a></li>
+<!--            <li class="active"><a href="#">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li> -->
           </ul>
         </div><!--/.nav-collapse -->
       </div>
@@ -71,17 +71,16 @@
     <div class="container">
 
 
-
+      <h1 style = "text-align:center;">PiBeacon Config</h1>
       <div id="main" class="starter-template">
-
-        <h1>Beacon Config</h1>
-
         <form>
         <fieldset>
         <div class="row">
-            <div class="col-md-12">
+            <div class="col-md-12 form-group">
+                <label class="" for="beacon">Beacon UUID</label>
                 <select id='beacon' class="form-control input-lg">
                   <option value="00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00">Null Beacon</option>
+                  <option value="ab cd ef 01 02 03 04 05 a0 b0 c0 d0 e0 f0 a1 a2">Datasnap</option>
                   <option value="2f 23 44 54 cf 6d 4a 0f ad f2 f4 91 1b a9 ff a6">Radius Networks</option>
                   <option value="e2 c5 6d b5 df fb 48 d2 b0 60 d0 f5 a7 10 96 e0">AirLocate</option>
                   <option value="b9 40 7f 30 f5 f8 46 6e af f9 25 55 6b 57 fe 6d">Estimote</option>
