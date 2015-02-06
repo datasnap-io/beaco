@@ -4,7 +4,7 @@ var favicon = require('static-favicon');
 var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
-var exphbs = require('express-handlebars');
+
 
 var routes = require('./routes/index');
 var users = require('./routes/users');
@@ -14,8 +14,8 @@ var app = express();
 app.set('env', "development");
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
-app.engine('.hbs',exphbs());
-app.set('view engine', '.hbs');
+// app.engine('.hbs',exphbs());
+// app.set('view engine', '.hbs');
 
 app.use(favicon());
 app.use(logger('dev'));
