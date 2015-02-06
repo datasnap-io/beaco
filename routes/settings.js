@@ -3,7 +3,6 @@ var router = express.Router();
 var beac = require('../lib/PiBeacon')
 
 router.post('/',function(req,res){
-        console.log('got here')
         var parsedBody = req.body;
         console.log( parsedBody )
         beac.setBeacon( parsedBody, function(err,stdout,stderr){

@@ -31,10 +31,11 @@ $(document).ready(function(){
                 cleanObj = _.omit(sendObj,function(val){ return val===""; })
 
 
+                console.log(cleanObj)
             $.ajax({
                 type:"POST",
                 url:"/settings",
-                data: JSON.stringify(cleanObj),
+                data: cleanObj,
                 success: updateSuccess,
                 dataType:'json'
             })
